@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 40293016}
   - component: {fileID: 40293015}
+  - component: {fileID: 40293017}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -170,6 +171,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &40293017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40293014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe604eaea6e73b844894dea68cd83bd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columnPoolSize: 5
+  columnPrefab: {fileID: 3814327937370462369, guid: dd32e4fc84f5c334896a9bee0f1939fa, type: 3}
+  spawnRate: 4
+  columnMin: -2
+  columnMax: 2
 --- !u!1 &164054522
 GameObject:
   m_ObjectHideFlags: 0
@@ -1318,7 +1336,7 @@ GameObject:
   - component: {fileID: 1801617867}
   - component: {fileID: 1801617868}
   m_Layer: 0
-  m_Name: BirdHero_1
+  m_Name: Rat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1392,7 +1410,7 @@ SpriteRenderer:
   m_SortingLayerID: -1564895109
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 302806343, guid: b3a3e099b91bb124a9f902ac31ebd030, type: 3}
+  m_Sprite: {fileID: -1658872738, guid: 828dc2d7f0c32154492cc351c139a617, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1454,7 +1472,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.13, y: 0.67}
+    oldSize: {x: 0.64, y: 0.38}
     newSize: {x: 1.18, y: 0.67}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
